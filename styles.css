@@ -1,0 +1,14 @@
+.gridBox{
+  border: 0.1px solid black;
+  width: 5px;
+  height: 5px;
+}
+#subContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+#mainContainer{
+  border: 1px solid black;
+  padding: 0;
+}
