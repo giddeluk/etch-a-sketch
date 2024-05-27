@@ -61,3 +61,8 @@ body{
     width: 30vw;
   }
 }
+@media only screen and (max-width: 410px){
+  #instructions{
+    font-size: x-small;
+  }
+}
