@@ -1,8 +1,12 @@
+*{
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+}
 .gridBox{
   border: 0.1px solid black;
   width: 2vw;
   height: 2vw;
-
 }
 #subContainer{
   display: flex;
@@ -11,4 +15,39 @@
 }
 #mainContainer{
   padding: 0;
+}
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EFEEE5;
+}
+#newGrid{
+  background-color: #274546;
+  color: #EFEEE5;
+  border: none;
+  padding: 3px;
+  border-radius: 4px;
+  margin: 2vh;
+  width: 50vw;
+}
+/* Navbar */
+.nav{
+  background-color: #274546;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+.nav > p{
+  color: #EFEEE5;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 900px){
+  #newGrid{
+    width: 30vw;
+  }
 }

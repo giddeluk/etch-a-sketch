@@ -56,7 +56,7 @@ const createMeasuredGrid = (size, mainContainer, subContainer, individualGridSiz
 newGrid.addEventListener("click", () => {
     let newGridSize = Number(prompt("What size of Grid Do you Want? Enter a Single Number. eg 16 for a 16 x 16 Grid, Numbers Above 100 are NOT Allowed"));
     while(newGridSize > 100){
-        newGridSize = Number(prompt("What size of Grid Do you Want? Enter a single Number eg 16 for a 16 x 16 grid"));
+        newGridSize = Number(prompt("Enter a Grid Size less than 100"));
     }
     let individualGridSize = totalGridWidth / newGridSize;
     let gridBoxes = document.querySelectorAll(".gridBox");
