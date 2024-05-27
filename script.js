@@ -68,6 +68,7 @@ newGrid.addEventListener("click", () => {
 
 })
 
+let color
 // Adds the mouseover event to all gridboxes
 function addHoverEffect(){
     let gridBoxes = document.querySelectorAll(".gridBox");

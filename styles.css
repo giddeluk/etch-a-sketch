@@ -4,7 +4,6 @@
   padding: 0;
 }
 .gridBox{
-  border: 0.1px solid black;
   width: 2vw;
   height: 2vw;
 }
@@ -15,6 +14,7 @@
 }
 #mainContainer{
   padding: 0;
+  box-shadow: 0.3px 0.1px 4px 1px #d3cccc;
 }
 body{
   display: flex;
@@ -26,10 +26,15 @@ body{
   background-color: #274546;
   color: #EFEEE5;
   border: none;
-  padding: 3px;
+  padding: 5px;
   border-radius: 4px;
   margin: 2vh;
   width: 50vw;
+}
+#instructions{
+  color: #274546;
+  margin-bottom: 2vh;
+  font-size: smaller;
 }
 /* Navbar */
 .nav{
@@ -43,6 +48,11 @@ body{
 }
 .nav > p{
   color: #EFEEE5;
+}
+#footer{
+  font-size: 10px;
+  color: #274546;
+  margin-top: 0.5vh;
 }
 
 /* Media Queries */
