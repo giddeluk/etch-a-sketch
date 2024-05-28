@@ -67,3 +67,9 @@ body{
     font-size: x-small;
   }
 }
+@media only screen and (max-width: 900px){
+  .gridBox {
+      width: 4vw;
+      height: 4vw;
+  }
+}
