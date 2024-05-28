@@ -3,11 +3,6 @@
   margin: 0;
   padding: 0;
 }
-.gridBox{
-  border: 0.5px solid #d8d9dd;
-  width: 2vw;
-  height: 2vw;
-}
 #subContainer{
   display: flex;
   flex-direction: row;
@@ -31,6 +26,14 @@ body{
   border-radius: 4px;
   margin: 2vh;
   width: 50vw;
+}
+#clearGrid{
+  color: #274546;
+  border: 1px solid #274546;
+  border-radius: 4px;
+  width: 50vw;
+  padding: 5px;
+  margin-bottom: 1vh;
 }
 #instructions{
   color: #274546;
@@ -58,7 +61,7 @@ body{
 
 /* Media Queries */
 @media only screen and (min-width: 900px){
-  #newGrid{
+  #newGrid, #clearGrid{
     width: 30vw;
   }
 }
@@ -69,7 +72,13 @@ body{
 }
 @media only screen and (max-width: 900px){
   .gridBox {
-      width: 4vw;
-      height: 4vw;
+    width: 4vw;
+    height: 4vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .gridBox {
+    width: 2vw;
+    height: 2vw;
   }
 }

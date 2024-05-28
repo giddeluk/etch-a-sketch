@@ -1,11 +1,19 @@
 const mainContainer = document.querySelector("#mainContainer");
 const subContainer = document.querySelector("#subContainer");
 const newGrid = document.querySelector("#newGrid");
+const clearGrid = document.querySelector("#clearGrid");
 
 // Grid Size = gridSize x gridSize eg 16 x 16
 const gridSize = 16;
-let windowWidth = (2/100) * window.innerWidth;
+let windowWidth;
+if(window.innerWidth <= 900){
+    windowWidth = (4/100) * window.innerWidth;
+}
+else if(window.innerWidth > 900){
+    windowWidth = (2/100) * window.innerWidth;
+}
 let totalGridWidth = windowWidth * 16;
+
 
 
 
@@ -68,7 +76,7 @@ newGrid.addEventListener("click", () => {
 
 })
 
-let color
+
 // Adds the mouseover event to all gridboxes
 function addHoverEffect(){
     let gridBoxes = document.querySelectorAll(".gridBox");
@@ -78,3 +86,10 @@ function addHoverEffect(){
     });
 })
 }
+
+clearGrid.addEventListener("click", () => {
+    let gridBoxes = document.querySelectorAll(".gridBox");
+    for(gridBox of gridBoxes){
+      gridBox.style.backgroundColor = "white";
+    }
+})
